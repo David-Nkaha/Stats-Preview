@@ -1,0 +1,193 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.container{
+    display: flex;
+    height: 96vh;
+    background-color: hsl(233, 47%, 7%);
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    height: 360px;
+    width: 900px;
+    background-color: hsl(244, 38%, 16%);
+}
+
+img{
+    width: 450px;
+    height: 360px;
+    background-color: hsl(277, 64%, 61%);
+    opacity: .3;
+}
+
+.image{
+    grid-row: span 2;
+}
+
+.text{
+    text-align: left;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 60px;
+    grid-column: span 3;
+}
+
+.text > p{
+    font-size: 15px;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.companies{
+    text-align: left;
+    padding-left: 50px;
+}
+.companies > h3{
+    margin: 0px;
+    
+}
+.companies > p{
+    margin: 0px;
+    margin-top: 7px;
+}
+
+.templates{
+    text-align: left;
+    padding-left: 25px;
+}
+.templates > h3{
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.templates > p{
+    margin: 0px;
+    margin-top: 7px;
+}
+
+.queries{
+    text-align: left;
+    padding-left: 0px;
+}
+.queries > h3{
+    margin: 0px;
+    
+}
+.queries > p{
+    margin: 0px;
+    margin-top: 7px;
+}
+
+@media (max-width: 855px) {
+    .grid{
+        display: grid;
+        grid-template-rows: 90px 90px 90px 90px 70px;
+        grid-template-columns: 160px;
+        height: 640px;
+        width: 260px;
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 15px;
+    }
+
+    img{
+        width: 260px;
+        height: 180px;
+        background-color: hsl(277, 64%, 61%);
+        opacity: .3;
+    }
+    
+    .image{
+        grid-row: span 2;
+        grid-column: span 2;
+        border-radius: 15px;
+    }
+
+    .image{
+    grid-row: span 2;
+    order: 1;
+    border-radius: 15px;
+    }
+
+    .text{
+    text-align: center;
+    order: 2;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-column: span 2;
+    grid-row: span 3;
+    margin-top: 0px;
+    }
+    h1{
+        font-size: 22px;
+    }   
+    .text > p{
+        font-size: 17px;
+    }
+
+    .companies{
+    text-align: center;
+    padding-left: 0px;
+    order: 3;
+    grid-column: span 2;
+    margin-bottom: 10px;
+    }
+    .companies > h3{
+        margin: 0px;
+    }
+    .companies > p{
+        margin: 0px;
+        margin-top: 7px;
+    }
+
+    .templates{
+        text-align: center;
+        padding-left: 0px;
+        order: 4;
+        grid-column: span 2;
+        margin-bottom: 10px;
+    }
+    .templates > h3{
+        margin: 0px;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
+    }
+    .templates > p{
+        margin: 0px;
+        margin-top: 7px;
+    }
+
+    .queries{
+        text-align: center;
+        padding-left: 0px;
+        order: 5;
+        grid-column: span 2;
+        margin-bottom: 10px;
+    }
+    .queries > h3{
+        margin: 0px;
+    }
+    .queries > p{
+        margin: 0px;
+        margin-top: 7px;
+    }
+
+
+  }
